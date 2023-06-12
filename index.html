@@ -199,23 +199,62 @@
         }
 
         main {
-            position: relative;
+           
             width: 100%;
             height: 100%;
+            background-color: whitesmoke;
         }
 
-        .home {
-            position: absolute;
-            top: 13rem;
-            left: 5rem;
-            font-size: 20px;
-            opacity: 0;
-            
-        }
+       .homebanner
+       {
+        width: 100%;
+        height: 40em;
+        display: flex;
+        justify-content: center;
+       
+       
+       }
+       .homesec
+       {
+        width: 80%;
+       
+       height: fit-content  ;
+        display: flex;
+        margin-top: 6em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 13em;
+       }
+.home
+{
+    width: 30%;
+}
+       .myimg
+       {
+        width: 70%;
+       height: 100%;
+        background: url("assets/blob\ \(1\).svg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    margin-top: 40px;
+      display: flex;
+justify-content: center;
+
+align-items: center;
+    }
+       
+       .myimg img
+       {
+       width: 20em;
+      border-radius: 0px 40px 0px 40px;
+      margin-left: -40px;
+       }
 
         .home h1,
         p {
-            color: white;
+            color: rgb(0, 0, 0);
             opacity: 0.9;
         }
 
@@ -228,9 +267,10 @@
             font-size: 20px;
             background-color: rgb(255, 166, 0);
             color: white;
-            border: 3px solid #252525;
-            border-radius: 5px;
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 10px;
             cursor: pointer;
+            
             
 
         }
@@ -299,7 +339,7 @@
             background-color: #252525;
 
             color: rgb(255, 166, 0);
-            border: 2px solid rgb(255, 166, 0);
+            border: 5px solid rgb(255, 166, 0);
         }
 
         .contact {
@@ -1177,6 +1217,10 @@
             
              
         }
+        @media screen and (max-width: 480px) {
+            
+            
+        }
         
     </style>
 </head>
@@ -1221,13 +1265,22 @@
         </nav> -->
     </header>
     <main id="home">
-        <img src="assets/images/New Project1.jpg" class="img-fluid" width="100%" height="100%">
+       
+        <div class="homebanner">
+            <div class="homesec">
+        
+
+        <div class="myimg">
+                   
+            <img src="assets/images/IMG_9859.JPG" width="100%" alt="">
+        </div>
         <div class="home" >
             <h1>I'm Naresh</h1>
-            <p>Freelance Web Design &<br>Full Stack Developer</p>
+            <p> Web Design &<br>Full Stack Developer</p>
             <a href="#hire"><button>Hire Me</button></a>
-
         </div>
+        </div>
+    </div>
         <div class="about" id="about">
             <img src="assets/images/Group 1.jpg" width="100%">
             <h1>About Me</h1>
@@ -1238,7 +1291,7 @@
                 <br>
                 <br>
                
-                <a href="#mywork"><button>View Works</button></a><span> <a href="assets/resume.pdf"> <button id="button1">Download CV</button> </a></span>
+                <a href="#mywork"><button>View Works</button></a><span> <a href="assets/my resume.pdf" download> <button id="button1">Download CV</button> </a></span>
             </div>
         </div>
         <div>
