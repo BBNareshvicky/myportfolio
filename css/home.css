@@ -1,0 +1,114 @@
+
+      .homebanner
+       {
+        width: 100%;
+        height: 37rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 0px 20px 5px rgb(0, 0, 0);
+       
+       
+       }
+       .homesec
+       {
+        width: 100%;
+       height: 100%;
+     
+        display: flex;
+        /* margin-top: 6em; */
+        flex-direction: row;
+       overflow: hidden;
+        
+       align-items: center;
+        gap: 5rem;
+        
+       }
+.home
+{
+    width: 30%;
+    height:20rem;
+    transform: translateX(200px);
+    opacity: 0;
+    
+}
+       .myimg
+       {
+        width: 60%;
+       height: 100%;
+        background: url("../assets/blob%20%281%29.svg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+      
+   
+      display: flex;
+justify-content: center;
+ overflow: hidden;
+align-items: center;
+
+    }
+       
+       .mypic
+       {
+       width: 21em;
+       overflow: hidden;
+      border-radius: 0px 40px 0px 40px;
+      transform: translateY(-300px);
+      opacity: 0;
+     
+       }
+
+        .home h1
+         {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+        }
+        .home p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+
+
+        .home button {
+            margin-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            background-color: rgb(255, 166, 0);
+            color: white;
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 20px 0px 20px 0px;
+            cursor: pointer;
+            
+            
+
+        }
+        #scrollTopBtn {
+  display: none; /* hidden initially */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
+#scrollTopBtn.show {
+  display: block;
+  opacity: 1;
+}
